@@ -28,6 +28,11 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Code folding
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+"set foldlevel=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -606,6 +611,8 @@ let g:ycm_seed_identifiers_with_syntax=1
 let g:ycm_min_num_of_chars_for_completion=2
 let g:ycm_auto_trigger = 1
 
+"Python-mode related settingslet
+let g:pymode_options_max_line_length = 160
 
 call plug#begin('~/vimfiles/plugged')
 	Plug	'jlanzarotta/bufexplorer'
@@ -617,6 +624,6 @@ call plug#begin('~/vimfiles/plugged')
 	Plug	'rdnetto/YCM-Generator', { 'branch': 'stable'}
 	Plug	'Valloric/YouCompleteMe', { 'do': 'python install.py --msvc 14'}
 	Plug	'tpope/vim-fugitive'
-	"Plug	'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+	Plug	'klen/python-mode'
 call plug#end()
 
