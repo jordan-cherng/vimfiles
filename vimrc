@@ -143,8 +143,8 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" Use spaces instead of tabs
-"""set expandtab
-set noexpandtab
+set expandtab
+"set noexpandtab
 
 " Be smart when using tabs ;)
 set smarttab
@@ -612,7 +612,8 @@ let g:ycm_min_num_of_chars_for_completion=2
 let g:ycm_auto_trigger = 1
 
 "Python-mode related settingslet
-let g:pymode_options_max_line_length = 160
+let g:pymode_options_max_line_length = 100
+let g:pymode_options_colorcolumn = 1
 
 call plug#begin('~/vimfiles/plugged')
 	Plug	'jlanzarotta/bufexplorer'
