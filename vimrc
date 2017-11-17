@@ -625,6 +625,6 @@ call plug#begin('~/vimfiles/plugged')
 	Plug	'rdnetto/YCM-Generator', { 'branch': 'stable'}
 	Plug	'Valloric/YouCompleteMe', { 'do': 'python install.py --msvc 14'}
 	Plug	'tpope/vim-fugitive'
-	Plug	'klen/python-mode'
+	"Plug	'klen/python-mode'
 call plug#end()
 
